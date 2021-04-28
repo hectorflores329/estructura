@@ -32,7 +32,7 @@ def estructura():
 
     ruta = "test/"
 
-    # print(" ------------ NIVEL 1 ------------ ")
+    print(" ------------ NIVEL 1 ------------ ")
     for i in range(len(df)):
         #ruta = "D:/GitHub/MPG/Datos/" + df["ruta"][i]
         ruta = "test/" + df["ruta"][i]
@@ -54,7 +54,7 @@ def estructura():
         df2["id2"] = df2["id"].apply(IntToString)
         df2["ruta"] = df2["id2"] + df2["ruta"]
 
-        # print(" ------------ NIVEL 2 ------------ ")
+        print(" ------------ NIVEL 2 ------------ ")
 
         for j in range(len(df2["ruta"])):
             try:
@@ -74,7 +74,7 @@ def estructura():
                 df3["id2"] = df3["id"].apply(IntToString)
                 df3["ruta"] = df3["id2"] + df3["ruta"]
                 
-                # print(" ------------ NIVEL 3 ------------ ")
+                print(" ------------ NIVEL 3 ------------ ")
                 
                 for k in range(len(df3["ruta"])):
                     try:
@@ -95,7 +95,7 @@ def estructura():
                         df4["id2"] = df4["id"].apply(IntToString)
                         df4["ruta"] = df4["id2"] + df4["ruta"]
                         
-                        # print(" ------------ NIVEL 4 ------------ ")
+                        print(" ------------ NIVEL 4 ------------ ")
                         
                         for l in range(len(df4["ruta"])):
                             try:
