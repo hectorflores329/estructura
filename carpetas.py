@@ -11,7 +11,13 @@ def update():
     folder()
 
 def folder():
-    os.mkdir("test/hola.txt")
+    palta = pd.read_csv("paltas3.csv")
+    fuente = "220101001cupos__concejales_test__maranon.png"
+
+    ruta = "test"
+
+    destino = ruta + "/palta.png"
+    shutil.copyfile(fuente, destino)
 
 def generarRuta(texto):
     aux = texto.lower()
@@ -40,7 +46,7 @@ def estructura():
     for i in range(len(df)):
         #ruta = "D:/GitHub/MPG/Datos/" + df["ruta"][i]
         ruta = "test/" + df["ruta"][i]
-        print(ruta)
+        # print(ruta)
         
         if os.path.isdir(ruta):
             # print('La carpeta ' + ruta + ' existe.');
@@ -63,7 +69,7 @@ def estructura():
         for j in range(len(df2["ruta"])):
             try:
                 ruta2 = ruta + "/" + df2["ruta"][j]
-                print(ruta2)
+                # print(ruta2)
                 if os.path.isdir(ruta2):
                     # print('La carpeta ' + ruta2 + ' existe.');
                     pass
@@ -83,7 +89,7 @@ def estructura():
                 for k in range(len(df3["ruta"])):
                     try:
                         ruta3 = ruta2 + "/" + df3["ruta"][k]
-                        print(ruta3)
+                        # print(ruta3)
 
                         if os.path.isdir(ruta3):
                             # print('La carpeta ' + ruta3 + ' existe.');
@@ -105,7 +111,7 @@ def estructura():
                         for l in range(len(df4["ruta"])):
                             try:
                                 ruta4 = ruta3 + "/" + df4["ruta"][l]
-                                print(ruta4)
+                                # print(ruta4)
                                 if os.path.isdir(ruta3):
                                     # print('La carpeta ' + ruta3 + ' existe.');
                                     pass
