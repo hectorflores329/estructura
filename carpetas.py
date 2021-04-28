@@ -11,7 +11,7 @@ def update():
     folder()
 
 def folder():
-    os.mkdir("Siuuu")
+    os.mkdir("Siuuu/hola.txt")
 
 def generarRuta(texto):
     aux = texto.lower()
