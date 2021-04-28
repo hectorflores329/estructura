@@ -8,7 +8,7 @@ import shutil
 
 def update():
     estructura()
-    folder()
+    # folder()
 
 def folder():
     palta = pd.read_csv("paltas3.csv")
@@ -40,7 +40,6 @@ def estructura():
 
     query = "SELECT * FROM INDUSTRIA"
     df = pd.read_sql(query, conection)
-    df
 
     query = "SELECT * FROM INDUSTRIA"
     df = pd.read_sql(query, conection)
