@@ -1,7 +1,9 @@
 name: Estructura DB
 
 on:
-    push
+    schedule:
+      # Every
+      - cron:  '5 * * * *'
   
 jobs:
   build:
