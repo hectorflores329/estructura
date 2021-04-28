@@ -1,1 +1,6 @@
 pandas
+pyodbc
+sqlalchemy
+os
+unicodedata
+shutil
