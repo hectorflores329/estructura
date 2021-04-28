@@ -86,6 +86,10 @@ def estructura():
                 else:
                     try:
                         os.mkdir(ruta2)
+
+                        destino = ruta2 + "/palta.png"
+                        shutil.copyfile(fuente, destino)
+
                     except:
                         pass
                 query = "SELECT * FROM PRODUCTO WHERE SECTOR_id = " + str(df2["id"][j])
@@ -108,6 +112,10 @@ def estructura():
                     
                             try:
                                 os.mkdir(ruta3)
+
+                                destino = ruta3 + "/palta.png"
+                                shutil.copyfile(fuente, destino)
+
                             except:
                                 pass
                         query = "SELECT * FROM CATEGORIA WHERE PRODUCTO_id = " + str(df3["id"][k])
@@ -130,6 +138,7 @@ def estructura():
                                         os.mkdir(ruta4)
                                     except:
                                         pass
+
                                 destino = ruta4 + "/palta.png"
                                 shutil.copyfile(fuente, destino)
                                 #palta.to_csv(ruta4 + "/palta.csv", index=False)
