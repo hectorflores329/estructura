@@ -40,6 +40,10 @@ def estructura():
 
     query = "SELECT * FROM INDUSTRIA"
     df = pd.read_sql(query, conection)
+    df
+
+    query = "SELECT * FROM INDUSTRIA"
+    df = pd.read_sql(query, conection)
     df["ruta"] = df["nombre"].apply(generarRuta)
     df["id2"] = df["id"].apply(IntToString)
     df["ruta"] = df["id2"] + df["ruta"]
