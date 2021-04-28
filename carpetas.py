@@ -2,12 +2,17 @@ import pandas as pd
 import pyodbc
 import sqlalchemy
 
+import os
 import unicodedata
 import shutil
 
 def update():
     estructura()
-    
+    folder()
+
+def folder():
+    os.mkdir("Siuuu")
+
 def generarRuta(texto):
     aux = texto.lower()
     aux = unicodedata.normalize("NFKD", aux).encode("ascii","ignore").decode("ascii") # ***
