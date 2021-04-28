@@ -35,7 +35,7 @@ def estructura():
     print(" ------------ NIVEL 1 ------------ ")
     for i in range(len(df)):
         #ruta = "D:/GitHub/MPG/Datos/" + df["ruta"][i]
-        ruta = "test/" + df["ruta"][i]
+        ruta = "./test/" + df["ruta"][i]
         # print(ruta)
         
         if os.path.isdir(ruta):
