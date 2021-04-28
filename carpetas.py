@@ -136,11 +136,14 @@ def estructura():
                                 else:
                                     try:
                                         os.mkdir(ruta4)
+
+                                        destino = ruta4 + "/palta.png"
+                                        shutil.copyfile(fuente, destino)
                                     except:
                                         pass
 
-                                destino = ruta4 + "/palta.png"
-                                shutil.copyfile(fuente, destino)
+                                # destino = ruta4 + "/palta.png"
+                                # shutil.copyfile(fuente, destino)
                                 #palta.to_csv(ruta4 + "/palta.csv", index=False)
                             except:
                                 pass
