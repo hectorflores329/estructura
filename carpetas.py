@@ -2,6 +2,8 @@ import pandas as pd
 import pyodbc
 import sqlalchemy
 
+import unicodedata
+import shutil
 
 def update():
     estructura()
