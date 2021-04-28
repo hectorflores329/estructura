@@ -1,5 +1,2 @@
 pandas==1.2.4
 pyodbc==4.0.30
-sqlalchemy
-unicodedata==9.0.0-2
-shutil==1.7.0
