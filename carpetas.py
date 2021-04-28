@@ -53,7 +53,7 @@ def estructura():
     for i in range(len(df)):
         #ruta = "D:/GitHub/MPG/Datos/" + df["ruta"][i]
         ruta = "test/" + df["ruta"][i]
-        print(df["ruta"][i])
+        # print(df["ruta"][i])
         
         if os.path.isdir(ruta):
             # print('La carpeta ' + ruta + ' existe.');
@@ -62,6 +62,9 @@ def estructura():
             
             try:
                 os.mkdir(ruta)
+
+                destino = ruta + "/palta.png"
+                shutil.copyfile(fuente, destino)
 
             except:
                 pass
