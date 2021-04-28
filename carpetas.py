@@ -14,9 +14,13 @@ def folder():
     palta = pd.read_csv("paltas3.csv")
     fuente = "220101001cupos__concejales_test__maranon.png"
 
-    ruta = "test"
+    ruta = "test/"
+    valor = "carpeta1"
+    rutaFinal = ruta + valor
 
-    destino = ruta + "/palta.png"
+    os.mkdir(rutaFinal)
+
+    destino = rutaFinal + "/palta.png"
     shutil.copyfile(fuente, destino)
 
 def generarRuta(texto):
