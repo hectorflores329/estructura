@@ -21,7 +21,7 @@ def estructura():
     palta = pd.read_csv("paltas3.csv")
     fuente = "220101001cupos__concejales_test__maranon.png"
 
-    conection = pyodbc.connect("Driver={SQL Server};Server=sud-austral.database.windows.net;Database=graficos;uid=sudaustral;pwd=Sud123456789")
+    conection = pyodbc.connect("Driver={ODBC Driver 17 for SQL Server};Server=sud-austral.database.windows.net;Database=graficos;uid=sudaustral;pwd=Sud123456789")
     cursor = conection.cursor()
 
     query = "SELECT * FROM INDUSTRIA"
