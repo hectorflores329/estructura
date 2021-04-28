@@ -30,12 +30,12 @@ def estructura():
     df["id2"] = df["id"].apply(IntToString)
     df["ruta"] = df["id2"] + df["ruta"]
 
-    ruta = "test/"
+    ruta = "../test/"
 
     print(" ------------ NIVEL 1 ------------ ")
     for i in range(len(df)):
         #ruta = "D:/GitHub/MPG/Datos/" + df["ruta"][i]
-        ruta = "./test/" + df["ruta"][i]
+        ruta = "../test/" + df["ruta"][i]
         # print(ruta)
         
         if os.path.isdir(ruta):
