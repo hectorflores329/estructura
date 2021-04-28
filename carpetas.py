@@ -130,7 +130,7 @@ def estructura():
                             try:
                                 ruta4 = ruta3 + "/" + df4["ruta"][l]
                                 # print(ruta4)
-                                if os.path.isdir(ruta3):
+                                if os.path.isdir(ruta4):
                                     # print('La carpeta ' + ruta3 + ' existe.');
                                     pass
                                 else:
